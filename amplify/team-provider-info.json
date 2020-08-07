@@ -1,0 +1,20 @@
+{
+    "dev": {
+        "awscloudformation": {
+            "AuthRoleName": "amplify-chubbapp-dev-111645-authRole",
+            "UnauthRoleArn": "arn:aws:iam::772349203027:role/amplify-chubbapp-dev-111645-unauthRole",
+            "AuthRoleArn": "arn:aws:iam::772349203027:role/amplify-chubbapp-dev-111645-authRole",
+            "Region": "us-east-1",
+            "DeploymentBucketName": "amplify-chubbapp-dev-111645-deployment",
+            "UnauthRoleName": "amplify-chubbapp-dev-111645-unauthRole",
+            "StackName": "amplify-chubbapp-dev-111645",
+            "StackId": "arn:aws:cloudformation:us-east-1:772349203027:stack/amplify-chubbapp-dev-111645/d7fa23d0-d7f7-11ea-9542-0a803f1342f3",
+            "AmplifyAppId": "d37kh7ejote84h"
+        },
+        "categories": {
+            "auth": {
+                "chubbappd5179bb3": {}
+            }
+        }
+    }
+}
