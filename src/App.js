@@ -24,7 +24,7 @@ export default () => {
         </header>
       </div>
         <Router>
-          <Route exact path="/" component={Main} />
+         
           <Route exact path="/user-dashboard" component={UserDash} />
           <Route exact path="/create-ticket" component={CreateTicket} />
           <Route exact path="/help" component={Help} />
