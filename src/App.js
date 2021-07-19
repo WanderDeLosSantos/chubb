@@ -20,7 +20,7 @@ export default () => {
       <Switch>
       <div className="App">
         <header className="App-header">
-          <Main/>
+         
         </header>
       </div>
         <Router>
