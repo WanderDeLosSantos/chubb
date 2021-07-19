@@ -1,37 +1,26 @@
-import React, { Fragment} from 'react'
-import './App.css'
-import {
-  BrowserRouter as Router,
-  Route,
-  Switch
-} from 'react-router-dom'
+import './App.css';
+import Navy from './components/Navy'
+import Footer from './components/Footer'
+import Home from './components/Home'
+import About from './components/About'
+import Contact from './components/Contact'
+import Services from './components/Services'
 
-// Components
-import Main from './components/main/Main'
-import CreateTicket from './components/create-ticket/CreateTicket'
-import Help from './components/help/Help'
-import UserDash from './components/user-dash/UserDash'
-import TicketStatus from './components/ticket-status/TicketStatus'
+import { Switch, Route } from 'react-router-dom'
 
-
-export default () => {
+const App = () => {
   return (
-    <Fragment>
-      <Switch>
-      <div className="App">
-        <header className="App-header">
-         
-        </header>
-      </div>
-        <Router>
-         
-          <Route exact path="/user-dashboard" component={UserDash} />
-          <Route exact path="/create-ticket" component={CreateTicket} />
-          <Route exact path="/help" component={Help} />
-          <Route exact path="/ticket-status" component={TicketStatus} />
-        </Router>
-      </Switch>
-    </Fragment>
+    <>
+      <Navy />
+        <Switch>
+          <Route exact path="/"><Home /></Route>
+          <Route exact path="/about" ><About /></Route>
+          <Route exact path="/services" ><Services /></Route>
+          <Route exact path="/contact" ><Contact /></Route>
+        </Switch>
+      <Footer />
+    </>
   );
 }
 
+export default App;

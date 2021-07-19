@@ -1,14 +1,92 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+
+.respn-logo {
+  max-width: 100%;
+  height: auto;
+  margin: 50px;
 }
 
-.App-header {
-  min-height: 100vh;
+/* NavBar */
+nav {
+  text-transform: uppercase;
+  font-family: 'Roboto';
+  width: 100%;
+  background-color:#c79dff;
+  
+}
+
+
+/* Footer */
+
+footer {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: black;
+  align-items: center;
+  border-top: 1px solid #c79dff;
+  background-color:#c79dff;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  /* height: 6vh; */
 }
 
+footer p {
+  /* margin: 10px; */
+  color: white;
+}
+
+/* Home Page */
+.home-body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  margin-top: 0px;
+  /* background-image: url('./img/home-page-half-bg.jpeg'); */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.home-body img {
+ width: 90%;
+ /* margin: 50%; */
+}
+
+/* About Page */
+.aboutPage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.aboutPage img {
+  width: 70%;
+}
+
+/* label color */
+.input-field label {
+  color:#c79dff;
+}
+/* label focus color */
+.input-field input[type=text]:focus + label {
+  color: #c79dff;
+}
+/* label underline focus color */
+.input-field input[type=text]:focus {
+  border-bottom: 1px solid #c79dff;
+  box-shadow: 0 1px 0 0 #c79dff;
+}
+/* valid color */
+.input-field input[type=text].valid {
+  border-bottom: 1px solid #000;
+  box-shadow: 0 1px 0 0 #000;
+}
+/* invalid color */
+.input-field input[type=text].invalid {
+  border-bottom: 1px solid #000;
+  box-shadow: 0 1px 0 0 #000;
+}
+/* icon prefix focus color */
+.input-field .prefix.active {
+  color: #000;
+}
